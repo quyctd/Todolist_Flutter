@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/todo.dart';
+import 'package:todo_app/Database/todo.dart';
 
 typedef ToggleTodoCallback = void Function(Todo, bool);
 typedef TodoDetailCallback = void Function(Todo);
@@ -28,7 +28,7 @@ class TodoList extends StatelessWidget {
           onPressed: () => onShowDetail(todo),
         )),
         Checkbox(
-          value: todo.isDone,
+          value: (todo.isDone == 0 ? false : true),
           onChanged: (bool isChecked) {
             onTodoToggle(todo, isChecked);
           },

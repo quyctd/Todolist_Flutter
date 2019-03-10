@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/todo.dart';
+import 'package:todo_app/Database/todo.dart';
 
 typedef ChangeTodoCallback = void Function(Todo, String, String);
 typedef DeleteTodoCallback = void Function(Todo);

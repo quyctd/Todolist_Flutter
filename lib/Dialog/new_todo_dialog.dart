@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/todo.dart';
+import 'package:todo_app/Database/todo.dart';
 
 class NewTodoDialog extends StatelessWidget {
   final titleController = new TextEditingController();
